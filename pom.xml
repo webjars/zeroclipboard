@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>zeroclipboard</artifactId>
-    <version>1.3.5</version>
+    <version>1.3.5-SNAPSHOT</version>
     <name>zeroclipboard</name>
     <description>WebJar for zeroclipboard</description>
     <url>http://webjars.org</url>
@@ -108,12 +108,6 @@
                 </configuration>
             </plugin>
         </plugins>
-        <resources>
-            <resource>
-                <directory>${project.basedir}/src/main/resources</directory>
-                <targetPath>${destDir}</targetPath>
-            </resource>
-        </resources>
     </build>
 
 </project>
