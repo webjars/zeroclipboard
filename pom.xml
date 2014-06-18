@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>zeroclipboard</artifactId>
-    <version>2.1.2-SNAPSHOT</version>
+    <version>2.1.1-1-SNAPSHOT</version>
     <name>zeroclipboard</name>
     <description>WebJar for zeroclipboard</description>
     <url>http://webjars.org</url>
@@ -80,9 +80,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}">
-                                        <include name="ZeroClipboard*" />
-                                    </fileset>
+                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}/dist"/>
                                 </move>
                             </target>
                         </configuration>
